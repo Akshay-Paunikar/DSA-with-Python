@@ -6,3 +6,4 @@
 01. Python Data Structures
 02. Numpy
 03. Pandas
+04. Matplotlib
