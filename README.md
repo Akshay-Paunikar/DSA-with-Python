@@ -7,3 +7,4 @@
 02. Numpy
 03. Pandas
 04. Matplotlib
+05. Seaborn
