@@ -9,3 +9,4 @@
 04. Matplotlib
 05. Seaborn
 06. Exploratory Data Analysis (EDA) on Titanic Dataset
+07. Python Functions
