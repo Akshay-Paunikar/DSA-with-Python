@@ -11,3 +11,4 @@
 06. Exploratory Data Analysis (EDA) on Titanic Dataset
 07. Python Functions
 08. Lambda Function
+09. Map Function
