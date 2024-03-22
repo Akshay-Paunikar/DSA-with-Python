@@ -19,3 +19,4 @@
 14. PyForest (Import all required DS libraries)
 15. OOPS Tutorial
 16. Python Exception Handling
+17. Python Logging
