@@ -20,3 +20,4 @@
 15. OOPS Tutorial
 16. Python Exception Handling
 17. Python Logging
+18. Project - Python Slot Machine
