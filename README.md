@@ -21,3 +21,4 @@
 16. Python Exception Handling
 17. Python Logging
 18. Project - Python Slot Machine
+19. Python Coding Questions (GFG)
