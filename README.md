@@ -22,3 +22,4 @@
 17. Python Logging
 18. Project - Python Slot Machine
 19. Python Coding Questions (GFG)
+20. Python Assert Statement
