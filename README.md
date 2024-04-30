@@ -23,3 +23,4 @@
 18. Project - Python Slot Machine
 19. Python Coding Questions (GFG)
 20. Python Assert Statement
+21. Python Generators vs Iterators
