@@ -24,3 +24,4 @@
 19. Python Coding Questions (GFG)
 20. Python Assert Statement
 21. Python Generators vs Iterators
+22. Python Decorators
