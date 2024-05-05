@@ -27,3 +27,4 @@
 22. Python Decorators
 23. Python IS vs IS EQUAL TO
 24. Shallow Copy vs Deep Copy
+25. Class Methods & Class Variables
