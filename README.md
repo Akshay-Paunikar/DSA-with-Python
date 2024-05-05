@@ -25,3 +25,4 @@
 20. Python Assert Statement
 21. Python Generators vs Iterators
 22. Python Decorators
+23. Python IS vs IS EQUAL TO
