@@ -30,3 +30,4 @@
 25. Class Methods & Class Variables
 26. Python Eval Function
 27. Asynchronous Execution
+28. Python Data Classes
