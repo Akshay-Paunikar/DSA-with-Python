@@ -29,3 +29,4 @@
 24. Shallow Copy vs Deep Copy
 25. Class Methods & Class Variables
 26. Python Eval Function
+27. Asynchronous Execution
