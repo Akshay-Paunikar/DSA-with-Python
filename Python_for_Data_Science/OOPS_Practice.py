@@ -100,4 +100,8 @@ student1.average_marks()
 student1.hello()
 
 
-# Abstraction, Encapsulation, Inheritance, 
+# Abstraction - Hiding the implementation details and only showing the essential features to the user.
+# 
+# Encapsulation - Wrapping data and function together into single unit. 
+# 
+# Inheritance 
