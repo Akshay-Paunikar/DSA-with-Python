@@ -1,46 +1,58 @@
-# general purpose - wide variety of applications, across multiple domains and tasks rather than being specialized for a specific area
-# for example, Python is used in web development, data analysis, artificial intelligence, scientific computing, and more.
-# unlike domain-specific languages like SQL which is specialized for database queries and html which is specialized for 
-# web page structure
+# what is python?
+# python is a general purpose, high level, interpreted, dynamically typed programming language which allows programmming
+# in object oriented and procedural paradigms.
 
-# interpreted - Python code is executed line by line, which makes it easier to debug and test
-# Python is an interpreted language, meaning that it is executed by an interpreter rather than being compiled into machine code.
-# This allows for more flexibility and ease of use, as developers can run code without needing to compile it first.
-# This also means that Python code can be run on any platform with a compatible interpreter, making it highly portable.
-# This is in contrast to compiled languages like C or C++ which require a compilation step before execution.
-# interpreted languages are generally slower than compiled languages, but they offer more flexibility and ease of use
+# python language is very popular among beginners and professionals because of its simplicity and readability.
+# it is widely used in web development, data science, machine learning, artificial intelligence, automation, and more.
+# python has a huge collection of standard libraries and frameworks that make it easy to build complex applications quickly.
+# python is an open source language, which means it is free to use and distribute.
+# python is a case sensitive language, which means that variable names and keywords must be written in the correct case.
+# Python programs are generally smaller than other programming languages and the indentation requirement of the language, 
+# makes them readable all the time.
 
-# high level - Python abstracts away many of the complex details of the computer's hardware, making it easier for developers 
-# to write code without needing to manage memory or other low-level details.
-# Python is a high-level language, meaning it is designed to be easy to read and write, with a syntax that is closer to human language.
+# Now, let's breakdown the definition of python:
+# 1. General purpose: Python can be used for a wide range of applications, from web development to data analysis.
+# 2. High level: Python is designed to be easy to read and write, with a syntax that is similar to natural language.
+# 3. Interpreted: Python code is executed line by line, which makes it easier to debug and test.
+# 4. Dynamically typed: Python does not require you to declare the data type of a variable before using it, which makes it more flexible.
+# 5. Object oriented: Python supports object-oriented programming, which allows you to create reusable code and organize your 
+# programs into classes and objects.
+# 6. Procedural paradigms: Python also supports procedural programming, which allows you to write code in a linear fashion, 
+# using functions and procedures.
 
-# dynamically typed - Python does not require explicit declaration of variable types, allowing for more flexibility in coding.
-# Python is dynamically typed, meaning that variable types are determined at runtime rather than in advance.
+# let's write our first python program
+print("Hello, World!")
+
+# Rules for identifiers (such as variable names, function names, or class names)
+
+# In Python, variable names must follow certain rules to be valid. Here are the key rules for naming variables:
+# 1. Identifier names must start with a letter (a-z, A-Z) or an underscore (_).
+# 2. Identifier names can contain letters, numbers, and underscores.
+# 3. Identifier names are case-sensitive, meaning that "myVariable" and "myvariable" are considered different variables.
+# 4. Identifier names cannot be a reserved keyword in Python (e.g., "if", "else", "while", "for", etc.).
+# 5. Identifier names should be descriptive and meaningful, making it easier to understand the purpose of the variable.
+# 6. Identifier names should not contain spaces or special characters (except for underscores).
+# 7. Identifier names should not start with a number.
+
+import keyword
+print(keyword.kwlist)
+
+age = 25  # valid variable name
+_age = 30  # valid variable name with underscore
+age1 = 35  # valid variable name with a number
+
+print(age, _age, age1)
+
+# Invalid variable names
+# 1age = 40  # invalid variable name, cannot start with a number
+# print(1age)  # this will raise an error
+
+name = "akshay"
+last_name = "kumar"
+
+print(name, last_name)
+print(f"My name is {name} {last_name}.")  # formatted string literal (f-string)
+print("My name is {} {}.".format(name, last_name))  # using format method
+print("My name is {name} {surname}.".format(name = name, surname = last_name))  # using format method
 
 
-# object oriented - Python supports object-oriented programming, allowing developers to create classes and objects to encapsulate data 
-# and behavior.
-# Python is an object-oriented language, meaning it supports the concept of objects, which can encapsulate data and behavior.
-# This allows for more modular and reusable code, as well as better organization of complex programs.
-# Python supports multiple programming paradigms, including procedural, object-oriented, and functional programming.
-# procedural paradigm - Python supports procedural programming, which is a programming paradigm that focuses on the concept of 
-# procedures or routines.
-# functional programming - Python also supports functional programming, which is a programming paradigm that treats computation as 
-# the evaluation of mathematical functions and avoids changing state and mutable data.
-# Example of a simple Python program demonstrating some of these concepts
-# This program checks if a user is a minor or an adult based on their age input.
-# It uses basic input/output, conditional statements, and demonstrates Python's high-level syntax.
-
-
-print("Hello World!")
-
-age = int(input("Enter your age: "))
-age1 = input("Enter your age again: ")
-age2 = True
-print(type(age))
-print(type(age1))
-print(type(age2))
-if age < 18:
-    print("You are a minor.")
-else:
-    print("You are an adult.")
