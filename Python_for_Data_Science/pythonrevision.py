@@ -21,7 +21,7 @@
 # using functions and procedures.
 
 # let's write our first python program
-print("Hello, World!")
+# print("Hello, World!")
 
 # Rules for identifiers (such as variable names, function names, or class names)
 
@@ -35,13 +35,13 @@ print("Hello, World!")
 # 7. Identifier names should not start with a number.
 
 import keyword
-print(keyword.kwlist)
+# print(keyword.kwlist)
 
 age = 25  # valid variable name
 _age = 30  # valid variable name with underscore
 age1 = 35  # valid variable name with a number
 
-print(age, _age, age1)
+# print(age, _age, age1)
 
 # Invalid variable names
 # 1age = 40  # invalid variable name, cannot start with a number
@@ -52,7 +52,5 @@ last_name = "kumar"
 
 print(name, last_name)
 print(f"My name is {name} {last_name}.")  # formatted string literal (f-string)
-print("My name is {} {}.".format(name, last_name))  # using format method
+print("My name is {} {}.".format(last_name, name))  # using format method
 print("My name is {name} {surname}.".format(name = name, surname = last_name))  # using format method
-
-
