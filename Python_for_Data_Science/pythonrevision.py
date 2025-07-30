@@ -47,10 +47,72 @@ age1 = 35  # valid variable name with a number
 # 1age = 40  # invalid variable name, cannot start with a number
 # print(1age)  # this will raise an error
 
-name = "akshay"
-last_name = "kumar"
+# name = "akshay"
+# last_name = "kumar"
 
-print(name, last_name)
-print(f"My name is {name} {last_name}.")  # formatted string literal (f-string)
-print("My name is {} {}.".format(last_name, name))  # using format method
-print("My name is {name} {surname}.".format(name = name, surname = last_name))  # using format method
+# print(name, last_name)
+# print(f"My name is {name} {last_name}.")  # formatted string literal (f-string)
+# print("My name is {} {}.".format(last_name, name))  # using format method
+# print("My name is {name} {surname}.".format(name = name, surname = last_name))  # using format method
+
+# print "Hello, World!" 5 times using a while loop
+# count = 1
+# while count <= 5:
+#     print("Hello, World!")
+#     count += 1  # increment the count by 1
+    
+# print numbers from 1 to 10 using a while loop
+# count = 1
+# while count <= 10:
+#     print(count)
+#     count += 1  # increment the count by 1
+
+# print numbers from 1 to 10 using a while loop
+# count = 10
+# while count >= 1:
+#     print(count)
+#     count -= 1  # decrement the count by 1
+    
+# multipication table for a number using a while loop
+# num = int(input("Enter a number: "))
+# count = 1
+# while count <= 10:
+#     print(f"{num} x {count} = {num * count}")
+#     count += 1  # increment the count by 1
+
+# search for a number x in this tuple using loop
+tup = (1, 4, 9, 16, 25, 36, 49, 64, 81, 100)
+
+# x = int(input("Enter a number to search in the tuple: "))
+# idx = 0
+
+# while idx < len(tup):
+#     if tup[idx] == x:
+#         print(f"{x} found at index {idx}.")
+#         break
+#     idx += 1  # increment the index by 1
+
+# write a function to calculate the factorial of a number using a while & for loop
+# def factorial_while(n):
+#     if n < 0:
+#         print("Factorial is not defined for negative numbers.")
+#     result = 1
+#     count = 1
+#     while count <= n:
+#         result *= count
+#         count += 1
+#     print(result)
+    
+# num1 = int(input("Enter a number to calculate factorial using while loop: "))
+# factorial_while(num1)  
+
+# def factorial_for(n):
+#     if n < 0:
+#         print("Factorial is not defined for negative numbers.")
+#     result = 1
+#     for i in range(1, n + 1):
+#         result *= i
+#     print(result)
+    
+# num2 = int(input("Enter a number to calculate factorial using for loop: "))    
+# factorial_for(num2)  
