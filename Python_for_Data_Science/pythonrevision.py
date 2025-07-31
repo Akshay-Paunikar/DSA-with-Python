@@ -116,3 +116,22 @@ tup = (1, 4, 9, 16, 25, 36, 49, 64, 81, 100)
     
 # num2 = int(input("Enter a number to calculate factorial using for loop: "))    
 # factorial_for(num2)  
+
+# python function is a block of reusable code that performs a specific task.
+# it can take input parameters and return a value.
+# functions are defined using the def keyword followed by the function name and parentheses.
+# def function_name(parameters):
+#     # function body
+#     return value
+
+def even_or_odd(num):
+    if num % 2 == 0:
+        return True
+    else:
+        return False
+    
+lst = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+print(list(filter(even_or_odd, lst)))  # using filter function to filter even numbers from the list
+
+print(list(filter(lambda x: x % 2 == 0, lst)))  # using lambda function to filter even numbers from the list
+
