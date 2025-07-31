@@ -124,14 +124,22 @@ tup = (1, 4, 9, 16, 25, 36, 49, 64, 81, 100)
 #     # function body
 #     return value
 
-def even_or_odd(num):
-    if num % 2 == 0:
-        return True
-    else:
-        return False
+# def even_or_odd(num):
+#     if num % 2 == 0:
+#         return True
+#     else:
+#         return False
     
+# lst = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# print(list(filter(even_or_odd, lst)))  # using filter function to filter even numbers from the list
+
+# print(list(filter(lambda x: x % 2 == 0, lst)))  # using lambda function to filter even numbers from the list
+
 lst = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-print(list(filter(even_or_odd, lst)))  # using filter function to filter even numbers from the list
 
-print(list(filter(lambda x: x % 2 == 0, lst)))  # using lambda function to filter even numbers from the list
+lst2 = [i**2 for i in lst]
+print(lst2)
 
+# square only even numbers
+lst3 = [i**2 for i in lst if i%2==0]
+print(lst3)
