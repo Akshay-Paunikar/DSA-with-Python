@@ -171,3 +171,25 @@ a, b = swap_variables(a, b)
 print(a, b)  # Output: World Hello
 print("********** problem 9 completed **********")
 print("")
+
+# Problem 10: FizzBuzz (Interview Classic)
+# Write a program that prints numbers from 1 to 50.
+# For multiples of 3, print "Fizz" instead of the number.
+# For multiples of 5, print "Buzz".
+# For multiples of both 3 and 5, print "FizzBuzz".
+
+def fizzbuzz():
+    for i in range(1, 51):
+        if i % 3 == 0 and i % 5 == 0:
+            print("FizzBuzz")
+        elif i % 3 == 0:
+            print("Fizz")
+        elif i % 5 == 0:
+            print("Buzz")
+        else:
+            print(i)
+            
+# Example usage
+fizzbuzz()  # Output: Prints numbers from 1 to 50 with Fizz, Buzz, and FizzBuzz as described
+print("********** problem 10 completed **********")
+print("")    
