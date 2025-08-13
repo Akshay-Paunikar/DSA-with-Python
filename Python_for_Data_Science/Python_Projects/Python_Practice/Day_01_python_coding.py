@@ -136,5 +136,21 @@ print(account.check_balance())  # Output: Current Balance: 120
 print("********** problem 7 completed **********")
 print("")
 
-# 
+# Problem 8: Frequency Counter
+# Write a function that takes a list and returns a dictionary with the frequency of each element.
+def frequency_counter(lst):
+    frequency = {}
+    for item in lst:
+        if item in frequency:
+            frequency[item] += 1
+        else:
+            frequency[item] = 1
+    return frequency
+
+# Example usage
+print(frequency_counter([1, 2, 2, 3, 3, 3]))  # Output: {1: 1, 2: 2, 3: 3}
+print(frequency_counter(["apple", "banana", "apple", "orange"]))  # Output: {'apple': 2, 'banana': 1, 'orange': 1}
+print(frequency_counter("hello")) # Output: {'h': 1, 'e': 1, 'l': 2, 'o': 1}
+print("********** problem 8 completed **********")
+print("")
         
