@@ -78,3 +78,63 @@ print(merge_dictionaries({'x': 10, 'y': 20}, {'y': 30, 'z': 40}))  # Output: {'x
 print(merge_dictionaries({'name': 'Alice', 'age': 25}, {'age': 5, 'city': 'Wonderland'}))  # Output: {'name': 'Alice', 'age': 30, 'city': 'Wonderland'}
 print("********** problem 5 completed **********")
 print("")
+
+# Problem 6: Find the Second Largest Number
+# Write a function that takes a list of integers and returns the second largest number without using built-in sorting functions.
+def second_largest(numbers):
+    if len(numbers) < 2:
+        return None  # Not enough elements to find the second largest
+    first = second = float('-inf')  # Initialize to negative infinity
+    for number in numbers:
+        if number > first:
+            second = first
+            first = number
+        elif first > number > second:
+            second = number
+    return second if second != float('-inf') else None
+
+# Example usage
+print(second_largest([1, 2, 3, 4, 5]))  # Output: 4
+print(second_largest([5, 5, 5, 5]))      # Output: None
+print(second_largest([10, 20, 30, 40, 50]))  # Output: 40
+print(second_largest([2, 1])) # Output: 1
+print("********** problem 6 completed **********")
+print("")
+
+# Problem 7: Simple Bank Account (OOP)
+# Create a BankAccount class with methods deposit(), withdraw(), and check_balance(). Ensure you handle cases like insufficient balance.
+class BankAccount:
+    def __init__(self, initial_balance=0):
+        self.balance = initial_balance
+
+    def deposit(self, amount):
+        if amount > 0:
+            self.balance += amount
+            return f"Deposited: {amount}, New Balance: {self.balance}"
+        else:
+            return "Deposit amount must be positive."
+
+    def withdraw(self, amount):
+        if amount > self.balance:
+            return "Insufficient balance."
+        elif amount <= 0:
+            return "Withdrawal amount must be positive."
+        else:
+            self.balance -= amount
+            return f"Withdrew: {amount}, New Balance: {self.balance}"
+
+    def check_balance(self):
+        return f"Current Balance: {self.balance}"
+    
+# Example usage
+account = BankAccount(100)  # Create an account with an initial balance of 100
+print(account.check_balance())  # Output: Current Balance: 100
+print(account.deposit(50))      # Output: Deposited: 50, New Balance: 150
+print(account.withdraw(30))     # Output: Withdrew: 30, New Balance: 120
+print(account.withdraw(200))    # Output: Insufficient balance.
+print(account.check_balance())  # Output: Current Balance: 120
+print("********** problem 7 completed **********")
+print("")
+
+# 
+        
