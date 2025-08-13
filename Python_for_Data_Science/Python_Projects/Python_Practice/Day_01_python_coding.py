@@ -154,3 +154,20 @@ print(frequency_counter("hello")) # Output: {'h': 1, 'e': 1, 'l': 2, 'o': 1}
 print("********** problem 8 completed **********")
 print("")
         
+# Problem 9: Swap Two Variables Without a Temp Variable
+# Write code to swap the values of two variables without using a temporary variable also text values should be considered.
+# For both numbers and strings, we can use tuple unpacking:
+def swap_variables(a, b):
+    a, b = b, a
+    return a, b
+
+# Example usage
+a, b = 5, 10
+a, b = swap_variables(a, b)
+print(a, b)  # Output: 10 5
+
+a, b = "Hello", "World"
+a, b = swap_variables(a, b)
+print(a, b)  # Output: World Hello
+print("********** problem 9 completed **********")
+print("")
